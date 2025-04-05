@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c7e0aba1e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main id="navbar">
+      <nav>
+        <div class="nav__container">
+          <div class="row nav__row">
+            <h2 class="nav__logo">OMDb API</h2>
+            <div class="nav__links">
+              <a href="#" class="nav__link nav__link--hover">Home</a>
+              <a href="#" class="nav__link nav__link--hover">Find Movies</a>
+              <a href="#" class="nav__link nav__link--primary"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="row search__row">
+            <h1 class="search__tag">Browse all movies</h1>
+            <form class="search__form" action="">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search for a movie by, Title, Year, or Genre"
+              />
+              <button type="submit" class="search__button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <section id="movies">
+      <div class="container">
+        <div class="row filter__row">
+          <h2 class="filter__title">Search Results:</h2>
+          <div class="filter__options">
+            <h3 class="filter__title">Filter By:</h3>
+            <select id="filter">
+              <option value="" disabled selected>Sort</option>
+              <option value="YEAR_DSC">Year, deccending</option>
+              <option value="YEAR_ASC">Year, accending</option>
+            </select>
+          </div>
+        </div>
+        <div class="row movie__row">
+          <div class="movies__wrapper"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
