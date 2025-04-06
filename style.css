@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-
-a, button {
-    cursor: pointer;
+a,
+button {
+  cursor: pointer;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #d9d9d9;
+  background-color: #fff;
 }
 
-a, button, input {
-    text-decoration: none;
-    border: none;
-    background: none;
-    color: inherit;
+a,
+button,
+input {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
 }
 
 .row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* 
@@ -40,74 +42,79 @@ NAV
 */
 
 #navbar {
-    color: #fff;
+  color: #fff;
 }
 
 .nav__container {
-    background-image: url("./Assets/download.jpg");
-    background-color: rgba(255, 255, 255, 0.3);
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 20px 50px;
+  background-image: url("./Assets/download.jpg");
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 50px;
 }
 .nav__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nav__logo, 
+.nav__logo,
 .nav__links {
-    z-index: 2;
+  z-index: 2;
 }
 
 .nav__logo {
-    font-size: 28px;
-    font-weight: 600;
-    color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .nav__links {
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
 }
 
 .nav__link {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .nav__link--hover {
-    position: relative;
-    transition: all 300ms ease-in-out;
+  position: relative;
+  transition: all 300ms ease-in-out;
 }
 
 .nav__link--hover:after {
-    content: '';
-    background-color: white;
-    position: absolute;
-    bottom: -5px;
-    height: 3px;
-    width: 100%;
-    width: 0;
-    right: 0;
-    transition: all 300ms ease-in-out;
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease-in-out;
 }
 
 .nav__link--hover:hover:after {
-    left: 0;
-    width: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .nav__link--primary {
-    background-color: #242424;
-    border-radius: 50px;
-    padding: 8px 16px;
-    font-weight: 600;
+  background-color: #242424;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-weight: 600;
 }
-
 
 /* 
 
@@ -116,59 +123,66 @@ NAV SEARCH
 */
 
 .search__row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
 }
 
 .search__tag {
-    line-height: 1;
-    letter-spacing: 0.05em;
-    font-weight: 200;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .search__form {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    background-color: #d9d9d9;
-    border-radius: 50px;
-    padding: 16px;
-    transition: all 300ms ease-in-out;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 16px;
+  transition: all 300ms ease-in-out;
 }
 
 .search__form:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .search__input {
-    color: #242424;
-    text-align: center;
-    align-items: center;
-    width: 80%;
-    font-size: 24px;
+  color: #242424;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  font-size: 24px;
 }
 
 .search__input:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 .fa-magnifying-glass {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #242424;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #242424;
+  transition: all 300ms ease-in-out;
 }
 
+.fa-magnifying-glass:hover {
+  color: gold;
+}
 
 /* 
 
@@ -177,33 +191,50 @@ FILTER
 */
 
 #movies {
-    padding: 40px;
-    color: #242424;
+  color: #242424;
+}
+
+.container {
+    padding: 20px 50px;
 }
 
 .filter__row {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .filter__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #filter {
-    font-size: 15px;
-    font-weight: 300;
-    padding: 4px;
-    width: 175px;
-    height: 32px;
-    border-radius: 10px;
-    margin-left: 16px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 4px;
+  width: 175px;
+  height: 32px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.filter__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #242424;
+}
+
+#filter:hover {
+  background-color: #242424;
+  color: #fff;
+  transition: all 300ms ease-in-out;
 }
 
 /* 
@@ -212,56 +243,60 @@ MOVIES
 
 */
 
-
-
 .movies__wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 100px;
-    margin-top: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 100px;
+  margin-top: 40px;
 }
 
 .movie {
-    width: 100%;
-    max-width: 480px;
-    background-color: #fff;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: all 400ms ease-in-out;
-    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
-    border-radius: 25px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-
 .movie:hover {
-    transform: perspective(1000px) rotateY(-10deg);
+  transform: perspective(1000px) rotateY(-10deg);
 }
 
 .movie__image {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .movie__title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #242424;
+  text-transform: capitalize;
 }
 
 .movie__description {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 8px;
+  color: #242424;
+  overflow: hidden;
 }
+
 
 /* 
 
@@ -270,41 +305,41 @@ LOADING
 */
 
 .movies__loading {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    border-top: 1px solid #242424;
-    animation: loading 400ms infinite linear;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #242424;
+  animation: loading 400ms infinite linear;
 }
 
 @keyframes loading {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .movies__loading--spinner {
-    position: absolute;
-    top: 50%;
-    transform: translateY(50%);
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 150px;
-    animation: rotate 400ms infinite linear;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 150px;
+  animation: rotate 400ms infinite linear;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 
@@ -314,19 +349,196 @@ MISC
 */
 
 .movies__error--wrapper {
-    position: absolute;
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-    padding: 80px 0;
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 80px 0;
 }
 
 .movies__error {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
 }
 
 .error-img {
-    font-size: 100px;
+  font-size: 100px;
+}
+
+/* 
+
+RESPONSIVENESS
+
+*/
+
+/*Large phones*/
+
+@media (max-width: 768px) {
+  .nav__container {
+    padding: 20px 20px;
+  }
+
+  .nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo {
+    font-size: 20px;
+  }
+
+  .nav__links {
+    font-size: 16px;
+  }
+
+  .nav__link--primary {
+    display: none;
+  }
+
+  .search__tag {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .search__form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .search__input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .filter__title {
+    font-size: 20px;
+  }
+
+  .filter__row {
+    width: 100%;
+    margin: 16px auto;
+    display: flex;
+  }
+
+  #filter {
+    font-size: 14px;
+    padding: 4px;
+    width: 150px;
+    height: 32px;
+    margin-left: 8px;
+  }
+
+  .filter__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .movies__wrapper {
+    margin: 0 auto;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie {
+    max-width: 400px;
+  }
+
+  .movie__title {
+    font-size: 24px;
+  }
+
+  .movie__description {
+    font-size: 16px;
+  }
+
+  .movie__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+/* Small Phones */
+
+@media (max-width: 648px) {
+  .nav__container {
+    padding: 20px 20px;
+  }
+
+  .nav__logo {
+    font-size: 16px;
+  }
+
+  .nav__links {
+    font-size: 14px;
+  }
+
+  .nav__link--primary {
+    display: none;
+  }
+
+  .search__tag {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .search__form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .search__input {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .filter__title {
+    font-size: 16px;
+  }
+
+  .filter__row {
+    width: 100%;
+    margin: 16px auto;
+    display: flex;
+  }
+
+  #filter {
+    font-size: 12px;
+    padding: 2px;
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  .movies__wrapper {
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie {
+    max-width: 300px;
+    padding: 16px;
+  }
+
+  .movie__title {
+    font-size: 20px;
+  }
+
+  .movie__description {
+    font-size: 14px;
+  }
 }

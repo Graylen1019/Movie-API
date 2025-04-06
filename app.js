@@ -28,14 +28,15 @@ async function renderMovies(searchQuery = "") {
     // Check if there are any movies found
     if (moviesList.length === 0) {
       moviesWrapper.innerHTML = `<div class="movies__error--wrapper">
-                                  <p class="movies__error">No movies found.<br> Please try a different search!</p>
-                                  <i class="fa-solid fa-ban error-img"></i>
-                                </div>`;
+          <p class="movies__error">No movies found.<br> Please try a different search!</p>
+          <i class="fa-solid fa-ban error-img"></i>
+        </div>`;
       return;
     }
 
     // Sort movies based on the selected filter
     const filterValue = filterSelect.value;
+
     if (filterValue === "YEAR_ASC") {
       moviesList.sort((a, b) => a.Year - b.Year);
     } else if (filterValue === "YEAR_DSC") {
@@ -57,7 +58,7 @@ async function renderMovies(searchQuery = "") {
       <h2 class="movie__title">${movie.Title}</h2>
       <p class="movie__description">Year: ${movie.Year}</p>
       </div>`;
-    })
+      })
       .join("");
 
     moviesWrapper.innerHTML = moviesHTML;
